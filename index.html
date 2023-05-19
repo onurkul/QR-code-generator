@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Karekod Oluşturucu | Onur KUL</title>
+    <meta
+      name="description"
+      content="Bu araç ile dilediğiniz renklerde ve boyutlarda karekodlar oluşturabilir ve kolayca resim olarak indirebilirsiniz."
+    />
+    <meta name="author" content="Onur KUL" />
+    <meta name="publisher" content="Onur KUL" />
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 Days" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Onur KUL" />
+    <meta
+      property="og:image"
+      content="https://onurkul.com.tr/uploads/logo/logo_61fda0d03b48f0-92709354-65066295.png"
+    />
+    <meta property="og:image:width" content="180" />
+    <meta property="og:image:height" content="50" />
+    <meta property="og:type" content="website/" />
+    <meta property="og:title" content="Karekod Oluşturucu | Onur KUL" />
+    <meta
+      property="og:description"
+      content="Bu araç ile dilediğiniz renklerde ve boyutlarda karekodlar oluşturabilir ve kolayca resim olarak indirebilirsiniz."
+    />
+    <meta
+      property="og:url"
+      content="https://onurkul.com.tr/araclar/karekod-olusturucu/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="Onur KUL" />
+    <meta name="twitter:title" content="Karekod Oluşturucu | Onur KUL" />
+    <meta
+      name="twitter:description"
+      content="Bu araç ile dilediğiniz renklerde ve boyutlarda karekodlar oluşturabilir ve kolayca resim olarak indirebilirsiniz."
+    />
+    <meta
+      name="twitter:image"
+      content="https://onurkul.com.tr/uploads/logo/logo_61fda0d03b48f0-92709354-65066295.png"
+    />
+    <link
+      rel="canonical"
+      href="https://onurkul.com.tr/araclar/karekod-olusturucu/"
+    />
+    <link
+      rel="alternate"
+      href="https://onurkul.com.tr/araclar/karekod-olusturucu/"
+      hreflang="tr_TR"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://onurkul.com.tr/uploads/logo/favicon_62096e9aa3b474-30316417-17601085.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--- QR Code CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Karekod Oluşturucu</h1>
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Bir metin veya URL girin."
+      />
+      <div class="options">
+        <select class="sizeOptions">
+          <option value="100" selected>100 x 100</option>
+          <option value="200">200 x 200</option>
+          <option value="300">300 x 300</option>
+        </select>
+        <input type="color" id="BGColor" class="color-inp" />
+        <input type="color" id="FGColor" class="color-inp" />
+      </div>
+      <div class="box">
+        <button id="submit" disabled>Karekod Oluştur</button>
+        <a href="#" id="download" style="display: none">İndir</a>
+      </div>
+      <div class="container"></div>
+      <div class="footer">
+        <div class="wrapper2">
+          <div class="router">
+            <a class="icon" href="https://onurkul.com.tr/" target="_blank"
+              ><i class="fa-solid fa-home"></i
+            ></a>
+            <a class="icon-name" href="https://onurkul.com.tr/" target="_blank"
+              >Ana Sayfa</a
+            >
+          </div>
+          <div class="router">
+            <a
+              class="icon"
+              href="https://onurkul.com.tr/araclar/karekod-okuyucu/"
+              target="_blank"
+              ><i class="fa-solid fa-qrcode"></i
+            ></a>
+            <a
+              class="icon-name"
+              href="https://onurkul.com.tr/araclar/karekod-okuyucu/"
+              target="_blank"
+              >Karekod Okuyucu</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="https://onurkul.com.tr/" target="_blank" class="onurkul"
+          >Telif Hakkı © 2023 Onur KUL - Tüm Hakları Saklıdır.</a
+        >
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

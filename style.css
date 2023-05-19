@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background: #e3f2fd;
+}
+.wrapper {
+  background-color: #ffffff;
+  padding: 4em 2em;
+  position: absolute;
+  width: 31.25em;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+  box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+}
+#userInput {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  outline: none;
+}
+.options {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+select {
+  appearance: none;
+  width: 8em;
+  padding: 0.45em 0.9em;
+  font-size: 1.25em;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: #5372f0;
+  border: none;
+  color: #ffffff;
+  background-image: url("arrow.png");
+  background-repeat: no-repeat;
+  background-size: 1.1em;
+  background-position: 6em;
+  outline: none;
+  border-radius: 0.3em;
+}
+select::-ms-expand {
+  display: none;
+}
+select option {
+  background-color: #ffffff;
+  color: #5372f0;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-size: 1.12em;
+}
+.selected {
+  display: none;
+}
+.color-inp {
+  appearance: none;
+  background-color: transparent;
+  width: 3.1em;
+  height: 3.4em;
+  outline: none;
+  border: none;
+}
+.color-inp::-webkit-color-swatch {
+  border-radius: 0.3em;
+  border: 0.18em solid #191f3f;
+}
+.color-inp::-moz-color-swatch {
+  border-radius: 0.3em;
+  border: 0.18em solid #191f3f;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box button,
+.box a {
+  font-size: 1em;
+  padding: 0.8em 2em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+}
+.box button:disabled {
+  background-color: transparent;
+  color: #a3aab6;
+  border: 0.18em solid #a3aab6;
+}
+.box button {
+  background-color: #5372f0;
+  color: #fff;
+  border: 0.18em solid #5372f0;
+  font-size: 16px;
+}
+.box a {
+  color: #ffffff;
+  text-decoration: none;
+  border: 0.18em solid #4cae4c;
+  background-color: #4cae4c !important;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.8em;
+}
+.hide {
+  display: none;
+}
+.title {
+  position: relative;
+  text-align: center;
+  bottom: 40px;
+  font-weight: 100;
+}
+.footer {
+  position: relative;
+  top: 60px;
+  text-align: center;
+}
+.onurkul {
+  text-decoration: none;
+  color: #000;
+  font-weight: 100;
+  font-size: 15px;
+}
+.icon {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  color: #5372f0;
+}
+.icon-name {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  bottom: 5px;
+}
+.router {
+  display: block;
+  float: left;
+  margin-left: 70px;
+  margin-top: 5px;
+}
+.wrapper2 {
+  border: 1px solid #ccc;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+  }
+  .footer {
+    margin-bottom: 10px;
+  }
+  .onurkul {
+    font-size: 12px;
+  }
+  .box {
+    display: block;
+    width: 100%;
+  }
+  .box button {
+    display: block;
+    background-color: #5372f0;
+    color: #fff;
+    border: 0.18em solid #5372f0;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .box a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 0.18em solid #4cae4c;
+    background-color: #4cae4c !important;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  select {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+  }
+  .footer {
+    margin-bottom: 10px;
+  }
+  .onurkul {
+    font-size: 12px;
+  }
+  .box {
+    display: block;
+    width: 100%;
+  }
+  .box button {
+    display: block;
+    background-color: #5372f0;
+    color: #fff;
+    border: 0.18em solid #5372f0;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .box a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 0.18em solid #4cae4c;
+    background-color: #4cae4c !important;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  select {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .router {
+    margin-left: 45px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    font-size: 25px !important;
+  }
+  .icon-name {
+    font-size: 16px !important;
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .router {
+    margin-left: 35px !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .router {
+    margin-left: 38px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    font-size: 25px !important;
+  }
+  .icon-name {
+    font-size: 16px !important;
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+  }
+  .footer {
+    margin-bottom: 10px;
+  }
+  .onurkul {
+    font-size: 12px;
+  }
+  .box {
+    display: block;
+    width: 100%;
+  }
+  .box button {
+    display: block;
+    background-color: #5372f0;
+    color: #fff;
+    border: 0.18em solid #5372f0;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .box a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 0.18em solid #4cae4c;
+    background-color: #4cae4c !important;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  select {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .router {
+    margin-left: 30px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    font-size: 25px !important;
+  }
+  .icon-name {
+    font-size: 16px !important;
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .router {
+    margin-left: 25px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    font-size: 25px !important;
+  }
+  .icon-name {
+    font-size: 16px !important;
+    position: relative;
+    bottom: 5px;
+  }
+}
