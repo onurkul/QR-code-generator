@@ -1,4 +1,5 @@
-# Karekod Oluşturucu
-Bu proje ile basit ve kolay bir şekilde karekod oluşturabilirsiniz.
+# QR Code Generator
 
-Örnek: https://onurkul.com.tr/araclar/karekod-olusturucu/
+With this project you can create a QR code in a simple and easy way.
+
+Example: https://onurkul.com.tr/araclar/karekod-olusturucu/
